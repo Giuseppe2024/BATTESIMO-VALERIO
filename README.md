@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f0f8ff;
         }
         header, footer {
             background-color: #343a40;
@@ -58,12 +58,36 @@
             <h3>Tavolo 2: Nome del Cavallo</h3>
             <p>Storia del cartone</p>
         </div>
+        <div class="table">
+            <h3>Tavolo 3: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
+        <div class="table">
+            <h3>Tavolo 4: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
+        <div class="table">
+            <h3>Tavolo 5: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
+        <div class="table">
+            <h3>Tavolo 6: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
+        <div class="table">
+            <h3>Tavolo 7: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
+        <div class="table">
+            <h3>Tavolo 8: Nome del Cavallo</h3>
+            <p>Storia del cartone</p>
+        </div>
         <!-- Aggiungi altre tabelle qui -->
     </section>
 
     <section class="directions">
         <h2>Indicazioni</h2>
-        <p><strong>Chiesa:</strong> Indirizzo della Chiesa</p>
+        <p><strong>Chiesa:</strong> https://www.diocesi.rimini.it/wd-annuario-enti/s-agata-martire-fabbrica-279/Indirizzo della Chiesa</p>
         <p><strong>Ricevimento:</strong> Indirizzo del Ricevimento</p>
     </section>
 </div>
