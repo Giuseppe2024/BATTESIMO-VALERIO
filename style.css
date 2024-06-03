@@ -3,22 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #bce8de;
-    background-image: url('./assets/sfondo.jpeg'); /* percorso relativo */
-    background-size: contain;
-    background-attachment: fixed;
+    background-image: url('./assets/sfondo.jpg');
+    background-size: contain; /* Mantiene le proporzioni dell'immagine */
+    background-attachment: fixed; /* Fissa l'immagine di sfondo */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
-    z-index: -1; /* Metti l'overlay dietro al contenuto */
 }
-}
+
 header, footer {
     background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
     color: white;
@@ -26,6 +18,11 @@ header, footer {
     padding: 1em 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombra del testo */
 }
+
 .container {
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo chiaro semi-trasparente per migliorare la leggibilità */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
