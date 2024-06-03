@@ -12,4 +12,8 @@ header, footer {
 }
 .container {
     padding: 20px;
+    background-image: url('/Users/Giuseppe/Desktop/VALERIO/BATTESIMO-VALERIO/assets/sfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
