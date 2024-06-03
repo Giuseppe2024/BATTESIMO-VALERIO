@@ -35,16 +35,16 @@ header, footer {
     border-radius: 10px;
     max-width: 800px;
     margin: 20px auto; /* Centra la casella orizzontalmente e aggiunge margine verticale */
+    text-align: center; /* Allinea al centro il contenuto della container */
 }
 
 .tableau, .directions {
     margin-bottom: 20px;
-    ext-align: center;
 }
 
 .table {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center; /* Allinea al centro il contenuto dei tavoli */
 }
 
 a {
@@ -55,9 +55,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .figurina {
     display: flex;
     align-items: center;
+    justify-content: center; /* Allinea il contenuto al centro */
     margin-bottom: 10px;
 }
 
@@ -65,6 +67,10 @@ a:hover {
     width: 100px; /* Imposta la larghezza dell'immagine */
     height: auto; /* Mantiene le proporzioni */
     margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+}
+
+.figurina h3 {
+    margin: 0; /* Rimuove il margine predefinito */
 }
 
 .figurina h3 {
