@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #bce8de;
-    background-image: url('assets/sfondo.jpeg');
+    background-image: url('./assets/sfondo.jpeg');
     background-size: contain; /* Mantiene le proporzioni dell'immagine */
     background-attachment: fixed; /* Fissa l'immagine di sfondo */
     background-position: center;
