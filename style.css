@@ -53,3 +53,19 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.figurina {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.figurina img {
+    width: 100px; /* Imposta la larghezza dell'immagine */
+    height: auto; /* Mantiene le proporzioni */
+    margin-right: 20px; /* Aggiunge spazio tra l'immagine e il testo */
+}
+
+.figurina h3 {
+    margin: 0; /* Rimuove il margine predefinito */
+}
+
