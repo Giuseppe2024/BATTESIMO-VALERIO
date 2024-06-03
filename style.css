@@ -78,7 +78,8 @@ a:hover {
 }
 .search-container {
     margin: 20px 0;
-    margin-right: auto; /* Aggiungi margine a destra */
+    margin-left: auto; /* Sposta la barra di ricerca a destra */
+    margin-right: 0; /* Assicura che non ci sia margine destro */
 }
 
 
