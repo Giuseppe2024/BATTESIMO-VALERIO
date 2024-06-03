@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
-    z-index: -1; /* Metti l'overlay dietro al contenuto */
+    z-index: 2; /* Metti l'overlay dietro al contenuto */
 }
 
 header, footer {
