@@ -3,16 +3,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #bce8de;
-    background-image: url('/Users/Giuseppe/Desktop/VALERIO/BATTESIMO-VALERIO/assets/sfondo.jpeg');
+    background-image: url('./assets/sfondo.jpeg'); /* percorso relativo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 header, footer {
-    background-color: #f2f5f4;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
     color: white;
     text-align: center;
     padding: 1em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombra del testo */
 }
 .container {
     padding: 20px;
