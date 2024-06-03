@@ -78,7 +78,7 @@ a:hover {
 }
 .search-container {
     margin: 20px 0;
-    margin-right: 50px; /* Aggiungi margine a destra */
+    margin-right: auto; /* Aggiungi margine a destra */
 }
 
 
