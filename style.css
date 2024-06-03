@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #bce8de;
     background-image: url('./assets/sfondo.jpeg'); /* percorso relativo */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
