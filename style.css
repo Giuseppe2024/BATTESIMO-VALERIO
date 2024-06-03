@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #bce8de;
-    background-image: url('./assets/sfondo.jpg');
+    background-image: url('./assets/sfondo.jpeg');
     background-size: contain; /* Mantiene le proporzioni dell'immagine */
     background-attachment: fixed; /* Fissa l'immagine di sfondo */
     background-position: center;
@@ -11,8 +11,18 @@ body {
     position: relative;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
+    z-index: -1; /* Metti l'overlay dietro al contenuto */
+}
+
 header, footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo semi-trasparente */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -23,6 +33,23 @@ header, footer {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Sfondo chiaro semi-trasparente per migliorare la leggibilità */
     border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto; /* Centra la casella orizzontalmente e aggiunge margine verticale */
+}
+
+.tableau, .directions {
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
