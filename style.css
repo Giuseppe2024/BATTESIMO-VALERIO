@@ -2,13 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #bce8de;
+    background-image: url('./assets/sfondo.jpeg'); /* percorso relativo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 header, footer {
-    background-color: #343a40;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
     color: white;
     text-align: center;
     padding: 1em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombra del testo */
 }
 .container {
     padding: 20px;
