@@ -39,6 +39,7 @@ header, footer {
 
 .tableau, .directions {
     margin-bottom: 20px;
+    ext-align: center;
 }
 
 .table {
