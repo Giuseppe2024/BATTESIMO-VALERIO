@@ -103,4 +103,11 @@ function hideTables(hide) {
     for (var i = 0; i < tables.length; i++) {
         tables[i].style.display = hide ? "none" : "";
     }
+
+    // Definisci le caratteristiche della console
+var consoleStyle = "color: blue; font-size: 16px;";
+
+// Utilizza la console per visualizzare i messaggi di debug
+console.log("%cQuesto è un messaggio di debug", consoleStyle);
+
 }
