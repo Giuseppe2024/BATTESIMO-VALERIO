@@ -31,18 +31,6 @@ function searchGuest() {
         return;
     }
 
-    /* Style per il countdown */
-#countdown {
-    font-family: 'Courier New', Courier, monospace;
-    color: white; /* Cambiato il colore del testo in bianco */
-    font-size: 2em;
-    text-align: center;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
     // Mostra tutti i tavoli se la ricerca è vuota o il countdown non è attivo
     if (filter === "" || !countdownActive) {
         hideTables(false);
@@ -98,11 +86,12 @@ function startCountdown() {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("countdown").innerHTML = "<span style='font-family: Courier New, Courier, monospace; color: white; font-size: 2em; background-color: black; padding: 10px; border-radius: 5px;'>" + "Countdown: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s " + "</span>";
+        document.getElementById("countdown").innerHTML = "Countdown: " + days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
 
         if (distance < 0) {
             clearInterval(countdownInterval);
-            document.getElementById("countdown").innerHTML = "<span style='font-family: Courier New, Courier, monospace; color: white; font-size: 2em; background-color: black; padding: 10px; border-radius: 5px;'>L'EVENTO È INIZIATO</span>";
+            document.getElementById("countdown").innerHTML = "L'EVENTO È INIZIATO";
             hideTables(false); // Mostra i tavoli una volta scaduto il countdown
         }
     }, 1000);
@@ -116,9 +105,8 @@ function hideTables(hide) {
     }
 
     // Definisci le caratteristiche della console
-var consoleStyle = "color: blue; font-size: 16px;";
+    var consoleStyle = "color: blue; font-size: 16px;";
 
-// Utilizza la console per visualizzare i messaggi di debug
-console.log("%cQuesto è un messaggio di debug", consoleStyle);
-
+    // Utilizza la console per visualizzare i messaggi di debug
+    console.log("%cQuesto è un messaggio di debug", consoleStyle);
 }
