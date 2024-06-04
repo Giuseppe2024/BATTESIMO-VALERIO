@@ -75,7 +75,7 @@ function searchGuest() {
 
 // Funzione per avviare il countdown
 function startCountdown() {
-    var countdownDate = new Date("Jul 1, 2024 12:00:00").getTime(); // Imposta la data corretta
+    var countdownDate = new Date("Jun 16, 2024 10:55:00").getTime(); // Imposta la data corretta
 
     countdownInterval = setInterval(function() {
         var now = new Date().getTime();
