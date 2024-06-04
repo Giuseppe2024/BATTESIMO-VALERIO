@@ -1,3 +1,7 @@
+// Variabili per il countdown
+var countdownActive = false;
+var countdownInterval;
+
 function searchGuest() {
     console.log("searchGuest() function called"); // Aggiunta per il debug
     var input, filter, tables, i, j, txtValue;
@@ -13,20 +17,32 @@ function searchGuest() {
         errorMessage.style.display = "none";
     }
 
-    // Mostra tutti i tavoli se la ricerca è vuota
-    if (filter === "") {
-        for (i = 0; i < tables.length; i++) {
-            tables[i].style.display = "";
+    // Gestione del countdown
+    if (filter === "FUTURO") {
+        if (!countdownActive) {
+            startCountdown();
+            countdownActive = true;
         }
+        return;
+    } else if (filter === "PASSATO") {
+        clearInterval(countdownInterval);
+        countdownActive = false;
+        hideTables(false);
         return;
     }
 
+    // Mostra tutti i tavoli se la ricerca è vuota o il countdown non è attivo
+    if (filter === "" || !countdownActive) {
+        hideTables(false);
+        return;
+    }
+
+    // Filtra i tavoli in base alla ricerca
     var found = false;
     for (i = 0; i < tables.length; i++) {
         var table = tables[i];
         var tableHeaderText = table.querySelector("h3").textContent.toUpperCase();
         var tableRows = table.querySelectorAll("h3 ~ h3");
-        // Controlla il testo nei nomi delle persone e nei nomi dei tavoli
         for (j = 0; j < tableRows.length; j++) {
             txtValue = tableRows[j].textContent || tableRows[j].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -54,5 +70,37 @@ function searchGuest() {
         } else {
             errorMessage.style.display = "";
         }
+    }
+}
+
+// Funzione per avviare il countdown
+function startCountdown() {
+    var countdownDate = new Date("June 16, 2023 10:59:00").getTime();
+
+    countdownInterval = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = "Countdown: " + days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+            hideTables(false); // Mostra i tavoli una volta scaduto il countdown
+        }
+    }, 1000);
+}
+
+// Funzione per nascondere o mostrare i tavoli
+function hideTables(hide) {
+    var tables = document.getElementsByClassName("table");
+    for (var i = 0; i < tables.length; i++) {
+        tables[i].style.display = hide ? "none" : "";
     }
 }
