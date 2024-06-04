@@ -75,7 +75,7 @@ function searchGuest() {
 
 // Funzione per avviare il countdown
 function startCountdown() {
-    var countdownDate = new Date("June 16, 2023 10:59:00").getTime();
+    var countdownDate = new Date("Jul 1, 2024 12:00:00").getTime(); // Imposta la data corretta
 
     countdownInterval = setInterval(function() {
         var now = new Date().getTime();
@@ -91,7 +91,7 @@ function startCountdown() {
 
         if (distance < 0) {
             clearInterval(countdownInterval);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+            document.getElementById("countdown").innerHTML = "L'EVENTO È INIZIATO";
             hideTables(false); // Mostra i tavoli una volta scaduto il countdown
         }
     }, 1000);
