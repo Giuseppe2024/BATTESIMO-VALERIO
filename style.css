@@ -72,9 +72,10 @@ a:hover {
 .figurina h3 {
     margin: 0; /* Rimuove il margine predefinito */
 }
-
+/* Style per il campo di ricerca */
 .search-container {
     margin: 20px 0;
+    text-align: center; /* Allinea il campo di ricerca al centro */
 }
 
 .search-input {
