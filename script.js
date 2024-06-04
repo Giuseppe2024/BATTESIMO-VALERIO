@@ -98,12 +98,11 @@ function startCountdown() {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("countdown").innerHTML = "Countdown: " + days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        document.getElementById("countdown").innerHTML = "<span style='font-family: Courier New, Courier, monospace; color: white; font-size: 2em; background-color: black; padding: 10px; border-radius: 5px;'>" + "Countdown: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s " + "</span>";
 
         if (distance < 0) {
             clearInterval(countdownInterval);
-            document.getElementById("countdown").innerHTML = "L'EVENTO È INIZIATO";
+            document.getElementById("countdown").innerHTML = "<span style='font-family: Courier New, Courier, monospace; color: white; font-size: 2em; background-color: black; padding: 10px; border-radius: 5px;'>L'EVENTO È INIZIATO</span>";
             hideTables(false); // Mostra i tavoli una volta scaduto il countdown
         }
     }, 1000);
