@@ -31,6 +31,18 @@ function searchGuest() {
         return;
     }
 
+    /* Style per il countdown */
+#countdown {
+    font-family: 'Courier New', Courier, monospace;
+    color: white; /* Cambiato il colore del testo in bianco */
+    font-size: 2em;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
     // Mostra tutti i tavoli se la ricerca è vuota o il countdown non è attivo
     if (filter === "" || !countdownActive) {
         hideTables(false);
