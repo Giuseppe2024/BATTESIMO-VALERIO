@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Copre l'intera altezza */
+    height: 0%; /* Copre l'intera altezza */
     background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
     z-index: 50; /* Metti l'overlay dietro al contenuto */
 }
