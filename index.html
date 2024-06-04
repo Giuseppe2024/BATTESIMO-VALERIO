@@ -6,14 +6,22 @@
     <title>Battesimo di Valerio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <style>
+        #qr-code {
+            width: 100px; /* Puoi cambiare questa dimensione come preferisci */
+            height: auto; /* Mantiene il rapporto di aspetto originale */
+        }
+    </style>
 </head>
 <body>
     <div class="overlay"></div> <!-- Aggiungi un overlay -->
     <header>
         <h1>BENVENUTI AL BATTESIMO DI VALERIO</h1>
-        <a href="#" id="'https://drive.google.com/drive/folders/1TFJvhkj7RabowniX-C8LOQCBNpbg7xRf?usp=share_link'"><img src="./assets/qrcode.jpeg" alt="QR Code"></a> <!-- QR Code cliccabile -->
+        <a href="https://drive.google.com/drive/folders/1TFJvhkj7RabowniX-C8LOQCBNpbg7xRf?usp=share_link">
+            <img src="./assets/qrcode.jpeg" alt="QR Code" id="qr-code">
+        </a> <!-- QR Code cliccabile -->
         <p>"Vivi in tempo reale le nostre emozioni clicca il qr"</p>
-        <p id="countdown"></p> <!-- Countdown -->
+        <p id="countdown"></p> <!-- Countdown --
     </header>
     <div class="container">
         <section class="tableau">
