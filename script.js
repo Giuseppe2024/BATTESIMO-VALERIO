@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
+    startCountdown();
+});
 // Variabili per il countdown
 var countdownActive = false;
 var countdownInterval;
