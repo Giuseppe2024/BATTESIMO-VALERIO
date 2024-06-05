@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Variabili per il countdown
+    var countdownActive = false;
+    var countdownInterval;
+    
     function searchGuest() {
         console.log("searchGuest() function called"); // Aggiunta per il debug
         var input, filter, tables, i, j, txtValue;
